@@ -1,0 +1,49 @@
+.error{
+    &__palette{
+      transform: translate(20px, 40px);
+      @include error;
+      &--decoration{
+        @include errorDecoration;
+      }
+      
+    }
+    &__empty{
+        transform: translate(20px, 36px);
+        @include error;
+        &--decoration{
+          @include errorDecoration;
+        }
+    }
+  &__email{
+    
+    transform: translate(0px, 346px);
+    @include error;
+      &--decoration{
+        @include errorDecoration;
+      }
+}
+&__phone{
+   
+    transform: translate(0px, 424px);
+    @include error;
+      &--decoration{
+        @include errorDecoration;
+      }
+}
+&__linkedin{
+   
+    transform: translate(0px, 500px);
+    @include error;
+    &--decoration{
+      @include errorDecoration;
+    }
+}
+&__github{
+   
+    transform: translate(0px, 577px);
+    @include error;
+      &--decoration{
+        @include errorDecoration;
+      }
+}}
+

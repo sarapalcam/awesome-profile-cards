@@ -1,0 +1,90 @@
+.centeredLanding {
+  @include columnCentered;
+}
+
+.landingMain {
+  @include columnCentered;
+  background-color: #f5f5f5;
+  min-height: calc(100vh - 127px);
+  @include tablet {
+    min-height: calc(100vh - 60px);
+  }
+}
+.landingMain__logo {
+  width: 250px;
+  height: 63px;
+  margin-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  @include tablet {
+    width: 420px;
+    height: 100px;
+    margin-bottom: 35px;
+  }
+}
+
+.containerText {
+  margin: 0px auto;
+  &__title {
+    font-family: "Merriweather", serif;
+    font-size: 19px;
+    color: $orange;
+    @include tablet {
+      font-size: 24px;
+    }
+  }
+  &__text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    color: $darkgreen;
+    width: 265px;
+    @include tablet {
+      font-size: 16px;
+      width: 330px;
+    }
+  }
+}
+
+.containerLinks {
+  border: 2px solid rgba(225, 115, 52, 0.21);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 268px;
+  height: 74px;
+  margin: 18px auto 40px;
+  &__text {
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    color: $darkgray;
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+  &__icon {
+    color: $orange;
+    @include tablet {
+      font-size: 28px;
+    }
+  }
+  @include tablet {
+    margin: 18px auto 185px;
+  }
+}
+
+.button__landing {
+  width: 130px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: $green;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-top: 9px;
+  margin: 0px auto 30px;
+}

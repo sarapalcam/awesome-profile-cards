@@ -1,0 +1,27 @@
+.legend {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 24px;
+  @include tablet {
+    width: 329px;
+  }
+  &__iconTitle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    &--mainTitle {
+      margin-left: 10px;
+      transform: translateY(-3px);
+      font-family: $mainfont;
+      font-weight: 600;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: $darkgray;
+    }
+  }
+}
+
+.rotateArrow .fa-chevron-down {
+  transform: rotate(180deg);
+}

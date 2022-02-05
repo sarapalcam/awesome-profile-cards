@@ -1,0 +1,20 @@
+//core SCSS
+@import 'core/reset';
+@import 'core/variables';
+@import 'core/mixins';
+
+//Components SCSS
+@import 'components/transitions';
+
+//Layout SCSS
+@import 'layout/header';
+@import 'layout/landing_main';
+@import 'layout/footer';
+@import 'layout/app_main';
+@import 'layout/preview';
+@import 'layout/share';
+@import 'layout/fill';
+@import 'layout/legend';
+@import 'layout/app_main';
+@import 'layout/design';
+@import 'layout/errors'

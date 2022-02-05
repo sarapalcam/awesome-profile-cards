@@ -1,0 +1,62 @@
+.button__landing {
+  transition: all ease-in-out 0.3s;
+  &:hover {
+    background-color: $orange;
+    transform: translateY(-4px);
+    box-shadow: 0 5px 7px rgba($color: #000000, $alpha: 0.3);
+  }
+  &:active {
+    background-color: $green;
+  }
+}
+
+.preview__btn {
+  transition: all ease-in-out 0.3s;
+  &:hover {
+    background-color: $darkgray;
+    color: $mainback;
+    border-color: $darkgray;
+  }
+  &:active {
+    background-color: $border2;
+  }
+}
+
+.form__label--input {
+  transition: all ease-in-out 0.2s;
+  &:hover {
+    border-radius: 7px;
+  }
+  &:focus {
+    border-radius: 7px;
+    border: 2px solid $orange;
+  }
+}
+
+.form .button {
+  transition: all ease-in-out 0.3s;
+  &:hover {
+    background-color: #ff6106;
+  }
+}
+
+.share__create_btn--on {
+  transition: all ease-in-out 0.3s;
+  &:hover {
+    transform: translateY(-4px);
+    background-color: #ff6106;
+  }
+  &:active {
+    background-color: $green;
+  }
+}
+
+.share__result--btn {
+  transition: all ease-in-out 0.3s;
+  &:hover {
+    background-color: #00d0f5;
+  }
+  &:active {
+    background-color: #00a0f5;
+  }
+}

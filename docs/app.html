@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Awesome Profile Cards</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+  </head>
+  <body class="body js-body">
+    <header class="header">
+      <a
+        href="./index.html"
+        title="Ir a la página de inicio"
+        alt="Ir a la página de inicio"
+      >
+        <img
+          class="header__logo"
+          src="./assets/images/logo-awesome-profile-cards.svg"
+          alt="Logo de Awesome Profile Cards"
+          title="Logo de Awesome Profile Cards"
+        />
+      </a>
+    </header>
+
+    <main class="main">
+      <section class="preview">
+        <button class="preview__btn js-resetBtn" type="reset">
+          <i class="far fa-trash-alt"></i>
+          Reset
+        </button>
+        <article class="preview__article palette-1">
+          <div class="preview__article--container">
+            <div class="preview__article--rectangle"></div>
+            <h2 class="preview__article--name js-preview__name">Nombre Apellido</h2>
+            <h3 class="preview__article--job js-preview__job">Front-end developer</h3>
+          </div>
+          <div class="preview__article--img js__profile-image"></div>
+          <div class="container">
+            <a class="js-preview__phone" href="tel:" alt="Ir a móvil" target="_blank">
+              <div class="container-icon">
+                <i class="fas fa-mobile-alt contact-icon"></i>
+              </div>
+            </a>
+            <a
+              class="js-preview__mail"
+              href="#"
+              alt="Ir a correo electronico"
+              target="_blank"
+            >
+              <div class="container-icon">
+                <i class="far fa-envelope contact-icon"></i>
+              </div>
+            </a>
+            <a
+              class="js-preview__linkedin"
+              href="#"
+              alt="Ir a la página de Linkedin"
+              target="_blank"
+            >
+              <div class="container-icon">
+                <i class="fab fa-linkedin-in contact-icon"></i>
+              </div>
+            </a>
+            <a
+              class="js-preview__github"
+              href="#"
+              alt="Ir a la página de GitHub"
+              target="_blank"
+            >
+              <div class="container-icon">
+                <i class="fab fa-github-alt contact-icon"></i>
+              </div>
+            </a>
+          </div>
+        </article>
+
+      </section>
+      <form class="dashboard">
+        <fieldset class="fieldset rotateArrow">
+          <legend
+            class="legend js_legendDesign"
+            style="cursor: pointer"
+            title="Pulsa para desplegar"
+          >
+            <div class="legend__iconTitle">
+              <i class="far fa-object-ungroup item--icon"></i>
+              <h2 class="legend__iconTitle--mainTitle">Diseña</h2>
+            </div>
+            <div><i class="fas fa-chevron-down" style="color: #54585a"></i></div>
+          </legend>
+
+          <div class="design js_collapsible">
+            <label class="design__label">Colores</label>
+            <ul>
+              <li class="color color_blue">
+                <input
+                  class="radio js-radio js-palette-1 input"
+                  type="radio"
+                  value="1"
+                  id="color_blue"
+                  name="palette"
+                />
+                <div class="color_blue--dark"></div>
+                <div class="color_blue--medium"></div>
+                <div class="color_blue--light"></div>
+              </li>
+              <li class="color color_red">
+                <input
+                  class="radio js-radio js-palette-2 input"
+                  type="radio"
+                  value="2"
+                  id="color_red"
+                  name="palette"
+                />
+                <div class="color_red--dark"></div>
+                <div class="color_red--medium"></div>
+                <div class="color_red--light"></div>
+              </li>
+              <li class="color color_grey">
+                <input
+                  class="radio js-radio js-palette-3 input"
+                  type="radio"
+                  value="3"
+                  id="color_grey"
+                  name="palette"
+                />
+                <div class="color_grey--dark"></div>
+                <div class="color_grey--medium"></div>
+                <div class="color_grey--light"></div>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+
+        <fieldset class="fieldset collapse">
+          <legend
+            class="legend js_legendFill"
+            style="cursor: pointer"
+            title="Pulsa para desplegar"
+          >
+            <div class="legend__iconTitle">
+              <i class="far fa-keyboard item--icon"></i>
+              <h2 class="legend__iconTitle--mainTitle">Rellena</h2>
+            </div>
+            <div><i class="fas fa-chevron-down" style="color: #54585a"></i></div>
+          </legend>
+
+          <div class="form js_collapsible">
+            <label class="form__label" for="name">Nombre completo*</label>
+            <input
+              class="input form__label--input "
+              placeholder="Ej: Mari Puri López"
+              type="text"
+              id="name"
+              name="name"
+              required
+            />
+            <label class="form__label" for="job">Puesto*</label>
+            <input
+              class="input form__label--input "
+              placeholder="Ej: Master and Commander"
+              type="text"
+              id="job"
+              name="job"
+              required
+            />
+            <p class="form__label">Imagen de perfil*</p>
+            <div class="form__label--wrapper">
+              <label for="photo" class="button ">Añadir imagen</label>
+              <div class="input imgPreview js__profile-preview"></div>
+            </div>
+            <input
+              type="file"
+              class="hidden js__profile-upload-btn input"
+              name="photo"
+              id="photo"
+            />
+            <label class="form__label" for="emailAdress">Email*</label>
+            <input
+              class="input form__label--input "
+              placeholder="Ej: maripuri@lamaster.com"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+            <label class="form__label" for="phone">Teléfono</label>
+            <input
+              class="input form__label--input "
+              placeholder="Ej: 611661234"
+              type="text"
+              id="phone"
+              name="phone"
+              required
+            />
+            <label class="form__label" for="linkedIn"
+              >Nombre de usuario en LinkedIn*</label
+            >
+            <input
+              class="input form__label--input "
+              placeholder="Ej: lamari.master"
+              type="text"
+              id="linkedin"
+              name="linkedin"
+              required
+            />
+            <label class="form__label" for="gitHub">Nombre de usuario en Github*</label>
+            <input
+              class="input form__label--input "
+              placeholder="Ej: lamari"
+              type="text"
+              id="github"
+              name="github"
+              required
+            />
+            <p class="form__mandatory">* Campos obligarotios</p>
+          </div>
+        </fieldset>
+
+        <fieldset class="share fieldset collapse">
+          <legend
+            class="legend js_legendShare"
+            style="cursor: pointer"
+            title="Pulsa para desplegar"
+          >
+            <div class="legend__iconTitle">
+              <i class="fas fa-share-alt item--icon"></i>
+              <h2 class="legend__iconTitle--mainTitle">Comparte</h2>
+            </div>
+            <div><i class="fas fa-chevron-down" style="color: #54585a"></i></div>
+          </legend>
+
+          <div class="share__container js_collapsible">
+
+          <button class="share__create_btn--off js_shareBtn" disabled>
+            <i class="far fa-address-card"></i>
+            Crear tarjeta
+          </button>
+          <section class="share__result collapseShare">
+            <p class="share__result--title">La tarjeta ha sido creada:</p>
+            <a href="" class="share__result--link js_share_link" target="_blank"
+              ></a
+            >
+            </a>
+            <a href="https://twitter.com/intent/tweet?text=" class="share__result--btn js-twitter" target="_blank ">
+              <i class="fab fa-twitter"></i>
+              <p>Compartir en twitter</p>
+            </a>
+          </section>
+        </div>
+        </fieldset>
+
+      </form>
+    </main>
+
+    <footer class="footer ">
+      <p class="footer__text">Awesome profile-cards @2021</p>
+      <a
+        href="https://adalab.es/"
+        class="footer__link"
+        title="logo de adalab"
+        target="_blank"
+        ><img
+          class="footer__link-image"
+          src="./assets/images/logo-adalab.png"
+          alt="logo adalab"
+      /></a>
+    </footer>
+
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

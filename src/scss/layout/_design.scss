@@ -1,0 +1,113 @@
+.design {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 22px 0 10px;
+
+  &__label {
+    font-family: $mainfont;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $darkgray;
+    margin-left: 20px;
+    height: 19px;
+  }
+
+  & .color_blue {
+    @include colorList;
+    margin-top: 6px;
+    &--dark {
+      background-color: $darkgreen;
+      @include colorBox;
+      margin-left: 10px;
+    }
+    &--medium {
+      background-color: $green;
+      @include colorBox;
+    }
+    &--light {
+      background-color: $input;
+      @include colorBox;
+    }
+  }
+
+  .color_red {
+    @include colorList;
+
+    &--dark {
+      background-color: $rectangle2;
+      @include colorBox;
+      margin-left: 10px;
+    }
+    &--medium {
+      background-color: $border2;
+      @include colorBox;
+    }
+    &--light {
+      background-color: $icon2;
+      @include colorBox;
+    }
+  }
+  .color_grey {
+    @include colorList;
+    &--dark {
+      background-color: $rectangle3;
+      @include colorBox;
+      margin-left: 10px;
+    }
+    &--medium {
+      background-color: $border3;
+      @include colorBox;
+    }
+    &--light {
+      background-color: $icon3;
+      @include colorBox;
+    }
+  }
+}
+.radio {
+  height: 17px;
+  width: 17px;
+  cursor: pointer;
+}
+
+.palette-1 .preview__article {
+  &--rectangle {
+    background-color: $rectangle1;
+  }
+  &--name {
+    color: $darkgreen;
+  }
+}
+
+.palette-1 .container-icon {
+  border: 2px solid $border1;
+  color: $icon1;
+}
+
+.palette-2 .preview__article {
+  &--rectangle {
+    background-color: $border2;
+  }
+  &--name {
+    color: $rectangle2;
+  }
+}
+
+.palette-2 .container-icon {
+  border: 2px solid $icon2;
+  color: $rectangle2;
+}
+
+.palette-3 .preview__article {
+  &--rectangle {
+    background-color: $border3;
+  }
+  &--name {
+    color: $rectangle3;
+  }
+}
+.palette-3 .container-icon {
+  border: 2px solid $icon3;
+  color: $rectangle3;
+}

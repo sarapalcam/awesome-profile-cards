@@ -1,0 +1,86 @@
+.share {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-top: solid 1px #d8d8d8;
+    &--title {
+      font-family: $mainfont;
+      font-size: 18px;
+      font-weight: 600;
+      color: $darkgray;
+      margin: 20px 0 5px;
+    }
+    &--link {
+      font-family: $mainfont;
+      font-size: 12px;
+      color: $orange;
+      font-weight: 600;
+      text-align: center;
+    }
+    &--btn {
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #00a0f5;
+      border-radius: 3px;
+      width: 181px;
+      height: 30px;
+      color: #fff;
+      font-family: $mainfont;
+      font-size: 14px;
+      margin: 10px 0 30px;
+    }
+  }
+}
+
+.fa-address-card {
+  color: #fff;
+  margin-right: 9px;
+}
+
+.fa-twitter {
+  margin-right: 10px;
+}
+
+.collapseShare {
+  display: none;
+}
+
+.share__create_btn--on {
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  width: 199px;
+  height: 50px;
+  background-color: $orange;
+  border-radius: 12px;
+  font-family: $mainfont;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 30px 0;
+  cursor: pointer;
+}
+
+.share__create_btn--off {
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  width: 199px;
+  height: 50px;
+  background-color: #d5d5d5;
+  border-radius: 12px;
+  font-family: $mainfont;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 30px 0;
+}
